@@ -1,0 +1,14 @@
+/* Hello World */
+$font1: 14px;
+$font2: 16px;
+$font3: 12px;
+
+body {
+	font-size: $font1;
+	h1 {
+		font-size: $font2;
+	}
+	h1.smaller {
+		font-size: $font3;
+	}
+}
