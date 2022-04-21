@@ -1,0 +1,21 @@
+/* All my colors */
+$screen_width: 960px 640px 320px;
+$font-size: 20px;
+$color: #1D1D1D;
+
+h1 {
+	font-size: $font-size;
+	@each $width in $screen_width {
+		$font-size: $font-size - 2;
+		@media screen and (max-width: $width) {
+			& {
+				font-size: $font-size;
+				@if $width == 320px {
+					&.small {
+						color: $color;
+					}
+				}
+			}
+		}
+	}
+}
