@@ -1,0 +1,18 @@
+/* Hello World */
+$font: 12px;
+$color: #00FF00;
+$color1: #FF0000;
+
+.info {
+	font-size: $font;
+}
+
+.success {
+	@extend .info;
+	color: $color;
+}
+
+.warning {
+	@extend .info;
+	color: $color1;
+}
