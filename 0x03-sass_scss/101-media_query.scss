@@ -1,0 +1,11 @@
+/* All my colors */
+$font_reg: 20px;
+$font_small: 14px;
+h1 {
+	font-size: $font_reg;
+	@media screen and (max-width: 320px){
+		& {
+			font-size: $font_small;
+		}
+	}
+}
